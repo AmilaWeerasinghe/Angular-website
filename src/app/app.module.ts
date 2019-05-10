@@ -9,6 +9,9 @@ import { ContentComponent } from './content/content.component';
 import { TestomonialComponent } from './testomonial/testomonial.component';
 import { ClientsComponent } from './clients/clients.component';
 import { PricingComponent } from './pricing/pricing.component';
+import { HeaderComponent } from './header/header.component';
+import { SocialComponent } from './social/social.component';
+import { NavigationComponent } from './navigation/navigation.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { PricingComponent } from './pricing/pricing.component';
     ContentComponent,
     TestomonialComponent,
     ClientsComponent,
-    PricingComponent
+    PricingComponent,
+    HeaderComponent,
+    SocialComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
