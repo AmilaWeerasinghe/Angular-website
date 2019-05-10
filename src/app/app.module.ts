@@ -4,11 +4,21 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { IntroComponent } from './intro/intro.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { ContentComponent } from './content/content.component';
+import { TestomonialComponent } from './testomonial/testomonial.component';
+import { ClientsComponent } from './clients/clients.component';
+import { PricingComponent } from './pricing/pricing.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    IntroComponent
+    IntroComponent,
+    GalleryComponent,
+    ContentComponent,
+    TestomonialComponent,
+    ClientsComponent,
+    PricingComponent
   ],
   imports: [
     BrowserModule,
