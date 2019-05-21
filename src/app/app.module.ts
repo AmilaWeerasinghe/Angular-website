@@ -14,6 +14,7 @@ import { SocialComponent } from './social/social.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { FooterComponent } from './footer/footer.component';
 import { SocioFootComponent } from './socio-foot/socio-foot.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { SocioFootComponent } from './socio-foot/socio-foot.component';
     SocialComponent,
     NavigationComponent,
     FooterComponent,
-    SocioFootComponent
+    SocioFootComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

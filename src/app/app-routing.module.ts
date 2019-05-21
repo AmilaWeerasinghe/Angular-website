@@ -1,39 +1,48 @@
+
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-
-import { AppComponent } from './app.component';
-import { IntroComponent } from './intro/intro.component';
+import { HomeComponent } from './home/home.component';
 import { GalleryComponent } from './gallery/gallery.component';
-import { ContentComponent } from './content/content.component';
-import { TestomonialComponent } from './testomonial/testomonial.component';
 import { ClientsComponent } from './clients/clients.component';
 import { PricingComponent } from './pricing/pricing.component';
-import { HeaderComponent } from './header/header.component';
 import { SocialComponent } from './social/social.component';
-import { NavigationComponent } from './navigation/navigation.component';
-import { FooterComponent } from './footer/footer.component';
-import { SocioFootComponent } from './socio-foot/socio-foot.component';
-
+import { TestomonialComponent } from './testomonial/testomonial.component';
+import { ContentComponent } from './content/content.component';
 const routes: Routes = [
-  { path: '', redirectTo: '/Home', pathMatch: 'full' },
-  { path: 'Home', component: HeaderComponent },
-  { path: 'About', component: IntroComponent },
-  { path: 'Gallery', component: GalleryComponent },
-  { path: 'Services', component: ContentComponent },
-  { path: 'Testimonials', component: TestomonialComponent },
-  { path: 'Clients', component: ClientsComponent },
-  { path: 'Pricing', component: PricingComponent }
+  {
+    path: 'home',
+    component: HomeComponent
+  },
+  {
+    path: 'gallery',
+    component: GalleryComponent
+  },
+  {
+    path: 'social',
+    component: SocialComponent
+  },
+  {
+    path: 'testomonial',
+    component: TestomonialComponent
+  },
+  {
+    path: 'pricing',
+    component: PricingComponent
+  },
+  {
+    path: 'content',
+    component: ContentComponent
+  },
+  {
+    path: 'clients',
+    component: ClientsComponent
+  }
 ];
 
-
-
-
-
-
-
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [
+    RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
