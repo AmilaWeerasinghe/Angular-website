@@ -15,7 +15,8 @@ export class HomeComponent implements OnInit {
     this.imagesUrl = [
       '../assets/images/dev.jpg',
       '../assets/images/com.jpg',
-      '../assets/images/dancer.jpg',
+      '../assets/images/softdev.jpg',
+      '../assets/images/key.jpg'
     ];
   }
 
