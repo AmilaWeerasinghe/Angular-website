@@ -37,6 +37,10 @@ const routes: Routes = [
   {
     path: 'clients',
     component: ClientsComponent
+  },
+  {
+    path: '',
+    redirectTo: '/home', pathMatch: 'full'
   }
 ];
 
