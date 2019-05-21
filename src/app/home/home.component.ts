@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { IImage } from '../IImage';
 declare const myTest: any;
 @Component({
   selector: 'app-home',
@@ -7,16 +8,16 @@ declare const myTest: any;
 
 })
 export class HomeComponent implements OnInit {
-  public imagesUrl;
+  public imageSources;
 
   constructor() { }
 
   ngOnInit() {
-    this.imagesUrl = [
+    this.imageSources = [
+      '../assets/images/softdev.jpg',
+      '../assets/images/agile-software.jpg',
       '../assets/images/dev.jpg',
       '../assets/images/com.jpg',
-      '../assets/images/softdev.jpg',
-      '../assets/images/key.jpg'
     ];
   }
 
