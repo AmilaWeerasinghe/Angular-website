@@ -1,0 +1,12 @@
+#box div {
+  display: inline;
+  margin-right: 100px;
+
+
+}
+
+#box li {
+  display: inline;
+  padding: 10px;
+  margin: 5px;
+}
