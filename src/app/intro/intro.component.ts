@@ -7,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./intro.component.css']
 })
 export class IntroComponent implements OnInit {
-  intro = {
+  intro = {};
 
-  };
+
 
   constructor(private config: ConfigService) { }
 
