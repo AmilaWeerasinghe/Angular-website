@@ -1,3 +1,4 @@
+import { ConfigService } from './../config.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./intro.component.css']
 })
 export class IntroComponent implements OnInit {
+  intro = {
 
-  constructor() { }
+  };
+
+  constructor(private config: ConfigService) { }
 
   ngOnInit() {
+    this.intro = this.getIntro();
+  }
+
+  getIntro() {
+    return this.config.getConfig().intro;
   }
 
 }
