@@ -29,4 +29,17 @@ export const configuration = {
         title: "We have the right package for you",
         description: 'Choose the best package meeting your level of experience. We guarantee that the experience in each and every level makes you the skillful professional among others'
     },
+    gallery: {
+        images: [
+            'gallery-image-1.jpg',
+            'gallery-image-2.jpg',
+            'gallery-image-3.jpg',
+            'gallery-image-4.jpg',
+            'gallery-image-5.jpg',
+            'gallery-image-6.jpg'
+
+
+        ]
+
+    }
 };
